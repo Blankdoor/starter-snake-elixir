@@ -4,14 +4,14 @@ defmodule ElixirSnake do
   """
 
   @doc """
-    This is the response to Post /start 
+    This is the response to Post /start
     This is where you define your color
   """
-  def start_resp(start_request) do 
+  def start_resp(start_request) do
     IO.inspect(start_request)
+
     %{
-      color: "#c0ffee",
-      taunt: "I'm READY"
+      color: "#c0ffee"
     }
   end
 
@@ -22,9 +22,9 @@ defmodule ElixirSnake do
   def move_resp(board) do
     IO.inspect(board)
     move = "right"
+
     %{
-      move: move,
-      taunt: "Go Time"
+      move: move
     }
   end
 

@@ -21,5 +21,4 @@ defmodule ElixirSnakeTest do
     move_resp = ElixirSnake.move_resp("")
     assert Map.has_key?(move_resp, :move)
   end
-
 end
