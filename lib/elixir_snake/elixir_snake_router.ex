@@ -12,12 +12,14 @@ defmodule ElixirSnake.Router do
   get "/" do
     conn
     |> put_resp_content_type("text/html")
-    |> send_resp(200,
-       """
-       <div>
-        This is the home of a battlesnake built with Elixir, please visit <a href='https://www.battlesnake.io/'>battlesnake.io</a> to learn more.
-       </div>
-       """)
+    |> send_resp(
+      200,
+      """
+      <div>
+       This is the home of a battlesnake built with Elixir, please visit <a href='https://www.battlesnake.io/'>battlesnake.io</a> to learn more.
+      </div>
+      """
+    )
   end
 
   post "/start" do
